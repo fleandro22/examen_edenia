@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Pagina para el registro de clientes">
+    
+
+    <!-- Estilos-->
+     <link rel="stylesheet" href="estilos.css">
+    
+    <title>Registro clientes</title>
+
+  </head> 
+  <body>
+
+   
+  
+
+    <div class="box">
+          <div id="map" class="hide"></div>
+
+        <div class="contenido">
+
+            <h2>Nuevo Cliente</h2>
+
+            <form name="frm_nuevo_cliente" id="frm_nuevo_cliente">
+
+                <div class="contenedor_linea">
+
+                    <div class="div_2lineas">
+
+                        <div class="texto">
+                            <label  for="txt_id_cliente">Id CLiente</label> <span style="color:red">*</span>
+
+                        </div>
+                        <div class="valor">
+                           <input type="number" id="txt_id_cliente" name="referencia" required title="Solo numeros"/>
+                        </div>
+                    </div>
+
+                    <div class="div_2lineas">
+
+                        <div class="texto">
+                            <label  for="txt_nif">NIF</label> <span style="color:red">*</span>
+
+
+                        </div>
+                        <div class="valor">
+                            <input type="text" id="txt_nif">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenedor_linea">
+                     <div class="div_1linea">
+
+                        <div class="texto">
+                            <label  for="txt_nombre_com">Nombre Comercial</label> <span style="color:red">*</span>
+
+                        </div>
+                        <div class="valor">
+                            <input type="text" id="txt_nombre_com">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contenedor_linea">
+                     <div class="div_1linea">
+
+                        <div class="texto">
+                            
+                            <label  for="txt_razon_social">Razon Social</label> <span style="color:red">*</span>
+
+                        </div>
+                        <div class="valor">
+                            <input type="text" id="txt_razon_social">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contenedor_linea">
+                     <div class="div_1linea">
+
+                        <div class="texto">
+                            
+                            <label  for="txt_direccion">Direccion</label> <span style="color:red">*</span>
+
+                        </div>
+                        <div class="valor">
+                            <input type="text" id="txt_direccion">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contenedor_linea">
+
+                    <div class="div_2lineas">
+
+                        <div class="texto">
+                            <label  for="txt_poblacion">Poblacion</label>
+
+                        </div>
+                        <div class="valor">
+                            <input type="text" id="txt_poblacion">
+                        </div>
+                    </div>
+
+                    <div class="div_2lineas">
+
+                        <div class="texto">
+                            
+                            <label  for="txt_cod_postal">Cod. Postal</label> <span style="color:red">*</span>
+
+                        </div>
+                        <div class="valor">
+                            <input type="text" id="txt_cod_postal">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor_linea">
+
+                    <div class="div_2lineas">
+
+                        <div class="texto">
+                            <label  for="txt_provincia">Provincia</label> <span style="color:red">*</span>
+
+                        </div>
+                        <div class="valor">
+                            <input type="text" id="txt_provincia">
+                        </div>
+                    </div>
+
+                    <div class="div_2lineas">
+
+                        <div class="texto">
+                            <label  for="txt_pais">Pais</label> <span style="color:red">*</span>
+ 
+                        </div>
+                        <div class="valor">
+                            <input type="text" id="txt_pais">
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedor_linea">
+
+                    <div class="div_2lineas">
+
+                        <div class="texto">
+                             <label  for="txt_email">Email</label> <span style="color:red">*</span>
+
+                        </div>
+                        <div class="valor">
+                            <input type="text" id="txt_email" >
+                        </div>
+                    </div>
+
+                    <div class="div_2lineas">
+
+                        <div class="texto">
+                            <label  for="txt_telefono">Telefono</label>
+
+                        </div>
+                        <div class="valor">
+                            <input type="text" id="txt_telefono">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contenedor_linea">
+
+                    <div class="btn_guardar">
+                        
+                        <input type="button" id="btn_save" value="Guardar" onclick="validar_envio()"> 
+                        <!-- <a href="#"  id="btn_save" onclick="validar_envio()">Guardar</a> -->
+                    </div>
+
+                     <div class="btn_cerrar">
+                        
+                        <input type="button" id="btn_cancelar"  value="Cerrar" onclick="cerrar()"> 
+                    </div>
+                 </div><br>
+
+                 <div id="mje_error" class="hide" style="width:70%;margin:0 auto;height:25px;color: red;font-weight: bold;;padding:5px;"><span>El campo es obligatorio</span></div>
+                 <div id="mje_success" class="hide" style="background-color:green; width:70%;margin:0 auto;height:25px;color: white;font-weight: bold;;padding:5px;"><span>Cliente registrado con exito</span></div>
+                
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+ <!-- JS -->
+ <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBO--VrOD93CO2mdlrpm34c2PSuVBV7Q4">
+</script>
+   <script src="principal.js"></script>
+
+  </body> 
+</html> 

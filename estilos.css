@@ -1,0 +1,168 @@
+html,body
+    {
+        padding: 0px;
+        margin: 0px;
+        font-size: 14px;
+        font-family: Helvetica;
+    }
+
+
+      #div_new_client{
+
+        width: 65%;
+        height: 500px;
+        margin: 0 auto;
+        
+        margin-top: 50px;
+
+
+      }
+      
+      #div_new_client{
+
+        text-align: center;
+      }
+
+    .box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 600px;
+        width: 95%;
+        margin: 0 auto;
+
+    }
+
+    .box .contenido {
+        width: 50%;
+        height: 480px; 
+        background-color: #f2f6fa;
+        /*line-height: 10em;*/
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        border: 1px solid gray;
+        
+        
+    }
+
+
+    .div_2lineas{
+
+        width: 47%;
+        float: left;
+
+    }
+
+    .contenedor_linea{
+
+        width: 100%;
+         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    
+
+    .div_2lineas .texto{
+
+        
+        float: left;
+        padding: 15px 0px;
+        
+
+    }
+
+    .div_2lineas .valor{
+        padding: 10px;
+        text-align: right;
+
+    }
+
+    .valor input{
+        width: 60%;
+        height: 20px;
+    }
+
+    .div_1linea{
+        float: left;
+        
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    .div_1linea .texto{
+         float: left;
+        padding: 15px 0px;
+        width: 30%;
+        text-align: left;
+    }
+
+    .div_1linea .valor{
+        padding: 10px 0px;
+        height: 20px;
+    }
+
+    .btn_guardar{
+
+        width: 40%;
+        height: 25px;
+        float: left;
+        margin-top: 20px;
+        text-align: right;
+    }
+
+     .btn_cerrar{
+
+        width: 40%;
+        height: 25px;
+        float: left;
+        margin-top: 20px;
+        text-align: left;
+    }
+    .hide{
+
+        display: none
+    }
+    .resaltar_error{
+
+        border: 2px solid red;
+        box-shadow: 0 0 5px 1px red;
+
+    }
+    
+    #map{
+        height: 500px !important;
+        width: 500px !important;
+        margin: 0 auto;
+    }
+
+    #btn_save
+    {
+        border: none;
+        border-radius: 2px;
+        display: inline-block;
+        height: 36px;
+        line-height: 36px;
+        outline: 0;
+        padding: 0 2rem;
+        text-transform: uppercase;
+        background-color: #49c0b6;
+    }
+
+    #btn_cancelar
+    {
+        border: none;
+        border-radius: 2px;
+        display: inline-block;
+        height: 36px;
+        line-height: 36px;
+        outline: 0;
+        padding: 0 2rem;
+        text-transform: uppercase;
+        background-color: #ccc;
+    }
