@@ -32,13 +32,13 @@ rana = 'https://www.flaticon.es/premium-icon/icons/svg/781/781551.svg'-->
 			<div class="botones" data-audio="tia_mayerli" id="img3">
 				<img src="fotos/tia_mayerli.png" alt="" class="">
 			</div>
-			<div class="botones" data-audio="rana" id="img4">
+			<div class="botones" data-audio="mono" id="img4">
 				<img src="https://image.freepik.com/vector-gratis/diseno-mono-color_1152-55.jpg" alt="" class="">
 			</div>
 			<div class="botones" data-audio="angie" id="img5">
 				<img src="fotos/angie.png" alt="" class="">
 			</div>
-			<div class="botones" data-audio="vaca" id="img6">
+			<div class="botones" data-audio="tia_mayerli" id="img6">
 				<img src="fotos/tia_mayerli.png" alt="" class="">
 			</div>
 			<div class="botones" data-audio="mama" id="img7">
@@ -47,13 +47,13 @@ rana = 'https://www.flaticon.es/premium-icon/icons/svg/781/781551.svg'-->
 			<div class="botones" data-audio="mono" id="img8">
 				<img src="https://image.freepik.com/vector-gratis/diseno-mono-color_1152-55.jpg" alt="" class="">
 			</div>
-			<div class="botones" data-audio="rana" id="img9">
+			<div class="botones" data-audio="papa" id="img9">
 				<img src="fotos/papa.png" alt="" class="">
 			</div>
 			<div class="botones" data-audio="leon" id="img10">
 				<img src="https://image.flaticon.com/icons/png/512/2097/2097847.png" alt="" class="">
 			</div>
-			<div class="botones" data-audio="tia_mayerli" id="img11">
+			<div class="botones" data-audio="angie" id="img11">
 				<img src="fotos/angie.png" alt="" class="">
 			</div>
 			<div class="botones" data-audio="mama" id="img12">
@@ -127,19 +127,13 @@ rana = 'https://www.flaticon.es/premium-icon/icons/svg/781/781551.svg'-->
 
 			//}, 1000);
 
+			console.log("opcion1",opcion1)
+			console.log("opcion2",opcion2)
+
 			if(jugados[0] === 'two')
 			{
 
 			 	if(opcion1===opcion2){
-
-
-					/* swal({
-                        title: "Adivinaste!",
-                        text: "",
-                        type: "success",
-                        //timer: 1500,
-                        confirmButtonText: "Cerrar"
-                    });*/
 					
 					setTimeout(function() {
 			 			$('.activo').each(function( index ) {
@@ -172,6 +166,7 @@ rana = 'https://www.flaticon.es/premium-icon/icons/svg/781/781551.svg'-->
 			 	
 			 			$('.activo').each(function( index ) {
 						  $( this ).find('img').addClass('ocultar')
+						  $( this ).removeClass('activo');
 						});
 
 
