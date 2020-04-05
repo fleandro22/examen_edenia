@@ -1,202 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Pagina para el registro de clientes">
-    
+<head>
+	<meta charset="UTF-8">
+	<title>Concentrese</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="sweetalert/sweetalert.css">
+</head>
+<!-- class="images_main animated bounceInLeft -->
+<body>
 
-    <!-- Estilos-->
-     <link rel="stylesheet" href="estilos.css">
-    
-    <title>Registro clientes</title>
+	<!-- leon = 'https://image.flaticon.com/icons/png/512/2097/2097847.png';
+	mono = 'https://image.freepik.com/vector-gratis/diseno-mono-color_1152-55.jpg'; 
+vaca = 'https://image.flaticon.com/icons/png/512/1993/1993711.png';
+rana = 'https://www.flaticon.es/premium-icon/icons/svg/781/781551.svg'-->
 
-  </head> 
-  <body>
-
-   
-  
-
-    <div class="box">
-          <div id="map" class="hide"></div>
-
-        <div class="contenido">
-
-            <h2>Nuevo Cliente</h2>
-
-            <form name="frm_nuevo_cliente" id="frm_nuevo_cliente">
-
-                <div class="contenedor_linea">
-
-                    <div class="div_2lineas">
-
-                        <div class="texto">
-                            <label  for="txt_id_cliente">Id CLiente</label> <span style="color:red">*</span>
-
-                        </div>
-                        <div class="valor">
-                           <input type="number" id="txt_id_cliente" name="referencia" required title="Solo numeros"/>
-                        </div>
-                    </div>
-
-                    <div class="div_2lineas">
-
-                        <div class="texto">
-                            <label  for="txt_nif">NIF</label> <span style="color:red">*</span>
+	<main>
 
 
-                        </div>
-                        <div class="valor">
-                            <input type="text" id="txt_nif">
-                        </div>
-                    </div>
-                </div>
+		<section class="main-botones">
+			
+			<div class="botones" id="img1" data-audio="papa">
+				<img src="fotos/papa.png" alt="" class="ocultar">
+			</div>
+			<div class="botones" data-audio="leon" id="img2">
+				<img src="https://image.flaticon.com/icons/png/512/2097/2097847.png" alt="" class="ocultar">
+			</div>
+			<div class="botones" data-audio="tia_mayerli" id="img3">
+				<img src="fotos/tia_mayerli.png" alt="" class="ocultar">
+			</div>
+			<div class="botones" data-audio="rana" id="img4">
+				<img src="https://www.flaticon.es/premium-icon/icons/svg/781/781551.svg" alt="" class="ocultar">
+			</div>
+			<div class="botones" data-audio="angie" id="img5">
+				<img src="fotos/angie.png" alt="" class="ocultar">
+			</div>
+			<div class="botones" data-audio="vaca" id="img6">
+				<img src="https://image.flaticon.com/icons/png/512/1993/1993711.png" alt="" class="ocultar">
+			</div>
+			<div class="botones" data-audio="mama" id="img7">
+				<img src="fotos/mama.png" alt="" class="ocultar">
+			</div>
+			<div class="botones" data-audio="mono" id="img8">
+				<img src="https://image.freepik.com/vector-gratis/diseno-mono-color_1152-55.jpg" alt="" class="ocultar">
+			</div>
+			<div class="botones" data-audio="rana" id="img9">
+				<img src="https://www.flaticon.es/premium-icon/icons/svg/781/781551.svg" alt="" class="ocultar">
+			</div>
+			<div class="botones" data-audio="leon" id="img10">
+				<img src="https://image.flaticon.com/icons/png/512/2097/2097847.png" alt="" class="ocultar">
+			</div>
+			<div class="botones" data-audio="tia_mayerli" id="img11">
+				<img src="fotos/tia_mayerli.png" alt="" class="ocultar">
+			</div>
+			<div class="botones" data-audio="mama" id="img12">
+				<img src="fotos/mama.png" alt="" class="ocultar">
+			</div>
+			<div class="botones" data-audio="vaca" id="img13">
+				<img src="https://image.flaticon.com/icons/png/512/1993/1993711.png" alt="" class="ocultar">
+			</div>
+			<div class="botones" data-audio="papa" id="img14">
+				<img src="fotos/papa.png" alt="" class="ocultar">
+			</div>
+			<div class="botones" data-audio="angie" id="img15">
+				<img src="fotos/angie.png" alt="" class="ocultar">
+			</div>
+			<div class="botones" data-audio="mono" id="img16">
+				<img src="https://image.freepik.com/vector-gratis/diseno-mono-color_1152-55.jpg" alt="" class="ocultar">
+			</div>
 
-                <div class="contenedor_linea">
-                     <div class="div_1linea">
+		</section>
 
-                        <div class="texto">
-                            <label  for="txt_nombre_com">Nombre Comercial</label> <span style="color:red">*</span>
+	</main>
 
-                        </div>
-                        <div class="valor">
-                            <input type="text" id="txt_nombre_com">
-                        </div>
-                    </div>
+	<!-- <footer>
+		<span>flvelasco</span>
 
-                </div>
-                <div class="contenedor_linea">
-                     <div class="div_1linea">
+	</footer> -->
 
-                        <div class="texto">
-                            
-                            <label  for="txt_razon_social">Razon Social</label> <span style="color:red">*</span>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="sweetalert/sweetalert.min.js"></script>
+	
+	<script>
 
-                        </div>
-                        <div class="valor">
-                            <input type="text" id="txt_razon_social">
-                        </div>
-                    </div>
+		var opcion1;
+		const jugados = []
 
-                </div>
-                <div class="contenedor_linea">
-                     <div class="div_1linea">
+		console.log("jugados-->"+jugados)
 
-                        <div class="texto">
-                            
-                            <label  for="txt_direccion">Direccion</label> <span style="color:red">*</span>
+		$(document).on('click', '.botones', function() {
 
-                        </div>
-                        <div class="valor">
-                            <input type="text" id="txt_direccion">
-                        </div>
-                    </div>
+			
+			var myid = $(this).attr('id');
 
-                </div>
+			$('#'+myid).addClass('animated flipOutY activo');
+			
+			let opcion2 = $('#'+myid).find('img').attr('src');
 
-                <div class="contenedor_linea">
+			if(jugados[0] === 'one')
+			{
+			
+				jugados[0] = 'two'
+				
+			}
+			else{
+				
+				jugados[0] = 'one'
+				opcion1 = $('#'+myid).find('img').attr('src');
+				
+			}
+			
+			setTimeout(function() {
+				$('#'+myid).removeClass('animated flipOutY');
+				$('#'+myid).find('img').removeClass('ocultar')
+				
+				
 
-                    <div class="div_2lineas">
+			}, 1000);
 
-                        <div class="texto">
-                            <label  for="txt_poblacion">Poblacion</label>
+			if(jugados[0] === 'two')
+			{
 
-                        </div>
-                        <div class="valor">
-                            <input type="text" id="txt_poblacion">
-                        </div>
-                    </div>
-
-                    <div class="div_2lineas">
-
-                        <div class="texto">
-                            
-                            <label  for="txt_cod_postal">Cod. Postal</label> <span style="color:red">*</span>
-
-                        </div>
-                        <div class="valor">
-                            <input type="text" id="txt_cod_postal">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor_linea">
-
-                    <div class="div_2lineas">
-
-                        <div class="texto">
-                            <label  for="txt_provincia">Provincia</label> <span style="color:red">*</span>
-
-                        </div>
-                        <div class="valor">
-                            <input type="text" id="txt_provincia">
-                        </div>
-                    </div>
-
-                    <div class="div_2lineas">
-
-                        <div class="texto">
-                            <label  for="txt_pais">Pais</label> <span style="color:red">*</span>
- 
-                        </div>
-                        <div class="valor">
-                            <input type="text" id="txt_pais">
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor_linea">
-
-                    <div class="div_2lineas">
-
-                        <div class="texto">
-                             <label  for="txt_email">Email</label> <span style="color:red">*</span>
-
-                        </div>
-                        <div class="valor">
-                            <input type="text" id="txt_email" >
-                        </div>
-                    </div>
-
-                    <div class="div_2lineas">
-
-                        <div class="texto">
-                            <label  for="txt_telefono">Telefono</label>
-
-                        </div>
-                        <div class="valor">
-                            <input type="text" id="txt_telefono">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contenedor_linea">
-
-                    <div class="btn_guardar">
-                        
-                        <input type="button" id="btn_save" value="Guardar" onclick="validar_envio()"> 
-                        <!-- <a href="#"  id="btn_save" onclick="validar_envio()">Guardar</a> -->
-                    </div>
-
-                     <div class="btn_cerrar">
-                        
-                        <input type="button" id="btn_cancelar"  value="Cerrar" onclick="cerrar()"> 
-                    </div>
-                 </div><br>
-
-                 <div id="mje_error" class="hide" style="width:70%;margin:0 auto;height:25px;color: red;font-weight: bold;;padding:5px;"><span>El campo es obligatorio</span></div>
-                 <div id="mje_success" class="hide" style="background-color:green; width:70%;margin:0 auto;height:25px;color: white;font-weight: bold;;padding:5px;"><span>Cliente registrado con exito</span></div>
-                
-
-            </form>
+			 	if(opcion1===opcion2){
 
 
-        </div>
+					/* swal({
+                        title: "Adivinaste!",
+                        text: "",
+                        type: "success",
+                        //timer: 1500,
+                        confirmButtonText: "Cerrar"
+                    });*/
+					
+					setTimeout(function() {
+			 			$('.activo').each(function( index ) {
+						  
+						  
+						  $( this ).addClass('animated infinite flash');
 
-    </div>
+						  	var audio = $(this).attr('data-audio');
+						   	var obj = document.createElement("audio");
+					         obj.src = 'audios/'+audio+'.mp3'; 
+					         obj.play(); 
 
- <!-- JS -->
- <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBO--VrOD93CO2mdlrpm34c2PSuVBV7Q4">
-</script>
-   <script src="principal.js"></script>
+						  setTimeout(function() {
 
-  </body> 
-</html> 
+						  	$('.activo').each(function( index ) {
+							  //$( this ).find('img').addClass('ocultar')
+							   $( this ).removeClass('animated infinite flash');
+							   $( this ).css('opacity','0.4');
+							   $( this ).removeClass('activo');
+							});
+
+						  }, 1750);
+
+						});
+					}, 1700);
+
+			 	}else{
+
+			 		setTimeout(function() {
+			 	
+			 			$('.activo').each(function( index ) {
+						  $( this ).find('img').addClass('ocultar')
+						});
+
+
+			 		}, 2000);
+			 		
+			 	}
+			}
+
+		});
+
+
+	</script>
+
+
+</body>
+</html>
