@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+
+
+
 	<title>Concentrese</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/animate.css">
@@ -21,52 +24,52 @@ rana = 'https://www.flaticon.es/premium-icon/icons/svg/781/781551.svg'-->
 		<section class="main-botones">
 			
 			<div class="botones" id="img1" data-audio="papa">
-				<img src="fotos/papa.png" alt="" class="ocultar">
+				<img src="fotos/papa.png" alt="" class="">
 			</div>
 			<div class="botones" data-audio="leon" id="img2">
-				<img src="https://image.flaticon.com/icons/png/512/2097/2097847.png" alt="" class="ocultar">
+				<img src="https://image.flaticon.com/icons/png/512/2097/2097847.png" alt="" class="">
 			</div>
 			<div class="botones" data-audio="tia_mayerli" id="img3">
-				<img src="fotos/tia_mayerli.png" alt="" class="ocultar">
+				<img src="fotos/tia_mayerli.png" alt="" class="">
 			</div>
 			<div class="botones" data-audio="rana" id="img4">
-				<img src="https://www.flaticon.es/premium-icon/icons/svg/781/781551.svg" alt="" class="ocultar">
+				<img src="https://image.freepik.com/vector-gratis/diseno-mono-color_1152-55.jpg" alt="" class="">
 			</div>
 			<div class="botones" data-audio="angie" id="img5">
-				<img src="fotos/angie.png" alt="" class="ocultar">
+				<img src="fotos/angie.png" alt="" class="">
 			</div>
 			<div class="botones" data-audio="vaca" id="img6">
-				<img src="https://image.flaticon.com/icons/png/512/1993/1993711.png" alt="" class="ocultar">
+				<img src="fotos/tia_mayerli.png" alt="" class="">
 			</div>
 			<div class="botones" data-audio="mama" id="img7">
-				<img src="fotos/mama.png" alt="" class="ocultar">
+				<img src="fotos/mama.png" alt="" class="">
 			</div>
 			<div class="botones" data-audio="mono" id="img8">
-				<img src="https://image.freepik.com/vector-gratis/diseno-mono-color_1152-55.jpg" alt="" class="ocultar">
+				<img src="https://image.freepik.com/vector-gratis/diseno-mono-color_1152-55.jpg" alt="" class="">
 			</div>
 			<div class="botones" data-audio="rana" id="img9">
-				<img src="https://www.flaticon.es/premium-icon/icons/svg/781/781551.svg" alt="" class="ocultar">
+				<img src="fotos/papa.png" alt="" class="">
 			</div>
 			<div class="botones" data-audio="leon" id="img10">
-				<img src="https://image.flaticon.com/icons/png/512/2097/2097847.png" alt="" class="ocultar">
+				<img src="https://image.flaticon.com/icons/png/512/2097/2097847.png" alt="" class="">
 			</div>
 			<div class="botones" data-audio="tia_mayerli" id="img11">
-				<img src="fotos/tia_mayerli.png" alt="" class="ocultar">
+				<img src="fotos/angie.png" alt="" class="">
 			</div>
 			<div class="botones" data-audio="mama" id="img12">
-				<img src="fotos/mama.png" alt="" class="ocultar">
+				<img src="fotos/mama.png" alt="" class="">
 			</div>
 			<!-- <div class="botones" data-audio="vaca" id="img13">
-				<img src="https://image.flaticon.com/icons/png/512/1993/1993711.png" alt="" class="ocultar">
+				<img src="https://image.flaticon.com/icons/png/512/1993/1993711.png" alt="" class="">
 			</div>
 			<div class="botones" data-audio="papa" id="img14">
-				<img src="fotos/papa.png" alt="" class="ocultar">
+				<img src="fotos/papa.png" alt="" class="">
 			</div>
 			<div class="botones" data-audio="angie" id="img15">
-				<img src="fotos/angie.png" alt="" class="ocultar">
+				<img src="fotos/angie.png" alt="" class="">
 			</div>
 			<div class="botones" data-audio="mono" id="img16">
-				<img src="https://image.freepik.com/vector-gratis/diseno-mono-color_1152-55.jpg" alt="" class="ocultar">
+				<img src="https://image.freepik.com/vector-gratis/diseno-mono-color_1152-55.jpg" alt="" class="">
 			</div> -->
 
 		</section>
@@ -84,9 +87,15 @@ rana = 'https://www.flaticon.es/premium-icon/icons/svg/781/781551.svg'-->
 	<script>
 
 		var opcion1;
-		const jugados = []
+		const jugados = [];
 
-		console.log("jugados-->"+jugados)
+
+		setTimeout(function() {
+			$('.botones').each(function( index ) {
+			  $( this ).find('img').addClass('ocultar')
+			});
+		}, 1500);
+		
 
 		$(document).on('click', '.botones', function() {
 
